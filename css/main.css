@@ -1,0 +1,320 @@
+@font-face{
+	font-family: 'Wisdom Script';
+	src: url('../fonts/wisdom-script.otf') format('opentype');
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+/* HEADER SECTION STYLES */
+header {
+	height: auto;
+	margin: 0 auto;
+	font-size: .875em;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 2.15em;
+	margin-left: auto;
+	margin-right: auto;
+}
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3.3em 0;
+	border-top: 3px solid #77a466;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li {
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 1em .625em;
+	display: block;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/* TOP SECTION STYLES */
+.top-section {
+	margin: 0 auto;
+	clear: both;
+	font-size: 1em;
+}
+
+.top-section .main-image {
+	height: auto;
+	float: left;
+}
+.top-section .main-image img {
+	width: 100%;
+	border-top: 3px solid #77a466;
+	border-bottom: 3px solid #77a466;
+}
+
+.top-section .main-title {
+	height: auto;
+	float: left;
+}
+.top-section .main-title h3 {
+	font-size: 1.125em;
+	text-align: left;
+	padding: .278em 1.67em;
+	color: #77a466;
+}
+.top-section .main-title p {
+	font-size: 1em;
+	line-height: 150%;
+	padding: 0 1.87em;
+}
+
+/* BOTTOM SECTION STYLES */
+.bottom-section {
+	margin: 0 auto;
+	clear: both;
+	font-size: 1em;
+}
+
+.bottom-section .section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	height: auto;
+	border-top: 1px solid #eee;
+}
+
+.bottom-section .section-one h4 {
+	font-size: .75em;
+	padding: .833em 2.5em;
+}
+
+.bottom-section .section-one .menu {
+	list-style: none;
+	padding: 0;
+}
+.bottom-section .section-one .menu li {
+	padding: .625em 1.875em;
+	color:#77a466;
+}
+
+.bottom-section .section-two h4,
+.section-three h4 {
+	font-size: .75em;
+	padding: .833em 2.5em;
+}
+
+.bottom-section .section-two .reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 150%;
+	padding: 0 1.875em;
+}
+
+.bottom-section .section-three .address {
+	font-size: 1em;
+	line-height: 150%;
+	padding: 0 1.875em;
+}
+
+/* FOOTER SECTION STYLES */
+footer {
+	height: 50px;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	clear: both;
+	text-align: center;
+	font-size: 1em;
+}
+
+footer h4 {
+	font-size: .75em;
+}
+
+footer span {
+	font-family: 'Wisdom Script', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 1em;
+}
+
+/*---------- TABLET ----------*/
+@media all and (min-width:768px) {
+	.bottom-section .section-one,
+	.section-two,
+	.section-three {
+		width: 33%;
+		height: auto;
+		float: left;
+		border-top: 1px solid #eee;
+	}
+	.bottom-section .section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+	header nav ul li {
+		display: inline;
+	}
+}
+
+/*---------- DESKTOP ----------*/
+@media all and (min-width:940px) {
+	/* HEADER SECTION STYLES */
+	header {
+		height: auto;
+		margin: 0 auto;
+		font-size: .875em;
+	}
+
+	header h1 {
+		font-size: 2.15em;
+		float: left;
+		margin: 0;
+		padding: 1.25em 1em;
+	}
+	header h1 span {
+		color: #77a466;
+	}
+
+	header nav {
+		float: right;
+		padding: 3.3em 0;
+		border-top: none;
+	}
+
+	header nav ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	header nav ul li {
+		font-size: 1em;
+		text-transform: uppercase;
+		font-weight: 700;
+		padding: 1em .625em;
+		display: inline;
+	}
+	header nav ul li a{
+		text-decoration: none;
+		color:#77a466;
+	}
+
+	/* TOP SECTION STYLES */
+	.top-section {
+		margin: 0 auto;
+		clear: both;
+		font-size: 1em;
+	}
+
+	.top-section .main-image {
+		height: auto;
+		float: left;
+	}
+	.top-section .main-image img {
+		width: 100%;
+		border-top: 3px solid #77a466;
+		border-bottom: 3px solid #77a466;
+	}
+
+	.top-section .main-title {
+		height: auto;
+		float: left;
+	}
+	.top-section .main-title h3 {
+		font-size: 1.125em;
+		text-align: left;
+		padding: .278em 1.67em;
+		color: #77a466;
+	}
+	.top-section .main-title p {
+		font-size: 1em;
+		line-height: 150%;
+		padding: 0 1.87em;
+	}
+
+	/* BOTTOM SECTION STYLES */
+	.bottom-section {
+		margin: 0 auto;
+		clear: both;
+		font-size: 1em;
+	}
+
+	.bottom-section .section-one,
+	.section-two,
+	.section-three {
+		width: 33%;
+		height: auto;
+		float: left;
+		border-top: 1px solid #eee;
+	}
+
+	.bottom-section .section-one h4 {
+		font-size: .75em;
+		padding: .833em 2.5em;
+	}
+
+	.bottom-section .section-one .menu {
+		list-style: none;
+		padding: 0;
+	}
+	.bottom-section .section-one .menu li {
+		padding: .625em 1.875em;
+		color:#77a466;
+	}
+
+	.bottom-section .section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+
+	.bottom-section .section-two h4,
+	.section-three h4 {
+		font-size: .75em;
+		padding: .833em 2.5em;
+	}
+
+	.bottom-section .section-two .reviews {
+		color: #333;
+		font-size: 1em;
+		line-height: 150%;
+		padding: 0 1.875em;
+	}
+
+	.bottom-section .section-three .address {
+		font-size: 1em;
+		line-height: 150%;
+		padding: 0 1.875em;
+	}
+}
